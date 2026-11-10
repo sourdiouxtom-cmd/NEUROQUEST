@@ -1,0 +1,34 @@
+{
+  "id": 7,
+  "title": "THE FINAL SYNAPSE",
+  "subtitle": "Reconstituer la source du problème",
+  "objective": "Combiner les connaissances pour retrouver la cause du dysfonctionnement.",
+  "start": "A",
+  "goal": "R",
+  "graph": {
+    "A": ["B", "C"],
+    "B": ["D", "E"],
+    "C": ["E", "F"],
+    "D": ["G"],
+    "E": ["H"],
+    "F": ["H", "I"],
+    "G": ["J"],
+    "H": ["K"],
+    "I": ["K", "L"],
+    "J": ["M"],
+    "K": ["N"],
+    "L": ["O"],
+    "M": ["P"],
+    "N": ["Q"],
+    "O": ["Q"],
+    "P": ["R"],
+    "Q": ["R"],
+    "R": []
+  },
+  "hint": "Tu as maintenant toutes les clés : le chemin correct est celui qui unit logique et stabilité.",
+  "dialogues": [
+    "ARIA : À ce stade, les anomalies cessent d'être un obstacle : elles deviennent des indices.",
+    "NEO : Les motifs se répètent, comme un schéma de mémoire.",
+    "ARIA : C'est bien cela. Le dysfonctionnement a une racine unique, et nous la retrouvons."
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": 3,
+  "title": "MEMORY CORE",
+  "subtitle": "Reconstituer une mémoire",
+  "objective": "Retrouver la séquence logique du souvenir.",
+  "start": "A",
+  "goal": "H",
+  "graph": {
+    "A": ["B", "C"],
+    "B": ["D"],
+    "C": ["E"],
+    "D": ["F"],
+    "E": ["F", "G"],
+    "F": ["H"],
+    "G": ["H"],
+    "H": []
+  },
+  "hint": "Le souvenir suit un chemin discret, mais il reste un chemin optimal vers H.",
+  "dialogues": [
+    "ARIA : Les séquences de mémoire forment des chemins structurés.",
+    "NEO : Chaque neurone semble conserver un fragment de souvenir.",
+    "ARIA : C'est exactement ça : le bon chemin reconstitue une mémoire cohérente."
+  ]
+}

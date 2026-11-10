@@ -1,0 +1,36 @@
+{
+  "id": 8,
+  "title": "REBIRTH",
+  "subtitle": "La reconstruction finale",
+  "objective": "Restaurer le réseau et compléter la reconstitution du cerveau numérique.",
+  "start": "A",
+  "goal": "T",
+  "graph": {
+    "A": ["B", "C"],
+    "B": ["D"],
+    "C": ["E", "F"],
+    "D": ["G"],
+    "E": ["H"],
+    "F": ["I"],
+    "G": ["J"],
+    "H": ["K"],
+    "I": ["L"],
+    "J": ["M"],
+    "K": ["N"],
+    "L": ["O"],
+    "M": ["P"],
+    "N": ["Q"],
+    "O": ["R"],
+    "P": ["S"],
+    "Q": ["S"],
+    "R": ["T"],
+    "S": ["T"],
+    "T": []
+  },
+  "hint": "Le réseau se rétablit au bout d'une chaîne cohérente.",
+  "dialogues": [
+    "ARIA : Nous avons trouvé la source du dysfonctionnement. Le réseau va pouvoir se reconstituer.",
+    "NEO : Cela ressemble à une renaissance, presque comme un cerveau qui se réveille.",
+    "ARIA : Oui. Le système recommence à fonctionner correctement. Tu as restauré le réseau."
+  ]
+}

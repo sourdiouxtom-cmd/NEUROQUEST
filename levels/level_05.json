@@ -1,0 +1,29 @@
+{
+  "id": 5,
+  "title": "THE DEEP NETWORK",
+  "subtitle": "Explorer un vaste réseau",
+  "objective": "Trouver la route optimale dans un graphe profond.",
+  "start": "A",
+  "goal": "M",
+  "graph": {
+    "A": ["B", "C"],
+    "B": ["D", "E"],
+    "C": ["E", "F"],
+    "D": ["H"],
+    "E": ["G", "H"],
+    "F": ["G", "I"],
+    "G": ["J"],
+    "H": ["K"],
+    "I": ["J", "L"],
+    "J": ["M"],
+    "K": ["M"],
+    "L": ["M"],
+    "M": []
+  },
+  "hint": "Dans un réseau profond, la recherche convient mieux qu'une simple intuition.",
+  "dialogues": [
+    "ARIA : Ici, les chemins se multiplient. Le système devient complexe.",
+    "NEO : C'est comme un grand labyrinthe de données.",
+    "ARIA : C'est bien un graphe. Le bon chemin doit être calculé, pas deviné."
+  ]
+}

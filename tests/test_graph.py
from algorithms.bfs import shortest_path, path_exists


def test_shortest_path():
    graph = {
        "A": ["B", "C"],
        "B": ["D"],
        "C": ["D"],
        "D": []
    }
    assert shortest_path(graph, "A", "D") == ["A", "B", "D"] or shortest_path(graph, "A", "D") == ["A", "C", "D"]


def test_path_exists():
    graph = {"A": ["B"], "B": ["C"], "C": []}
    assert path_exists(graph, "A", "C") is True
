@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Encyclopédie | NEUROQUEST</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  </head>
+  <body>
+    <div class="container">
+      <header class="topbar">
+        <h1>Encyclopédie</h1>
+        <nav class="nav">
+          <a href="/">Accueil</a>
+          <a href="/levels">Niveaux</a>
+          <a href="/settings">Paramètres</a>
+        </nav>
+      </header>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Neurone</h3>
+          <p class="muted">Une cellule nerveuse qui reçoit et transmet des signaux électriques dans le système nerveux.</p>
+        </div>
+        <div class="card">
+          <h3>Synapse</h3>
+          <p class="muted">Zone de communication entre deux neurones. Le signal passe de l'un à l'autre grâce à des substances chimiques et électriques.</p>
+        </div>
+        <div class="card">
+          <h3>Graphe</h3>
+          <p class="muted">Structure composée de sommets et d'arêtes. Elle permet de représenter des réseaux de connexions.</p>
+        </div>
+        <div class="card">
+          <h3>BFS</h3>
+          <p class="muted">Parcours en largeur. Il explore les nœuds selon leur distance depuis le départ.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

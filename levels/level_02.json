@@ -1,0 +1,23 @@
+{
+  "id": 2,
+  "title": "SYNAPTIC BRIDGE",
+  "subtitle": "Reconnecter plusieurs neurones",
+  "objective": "Restaurer une liaison stable entre plusieurs neurones.",
+  "start": "A",
+  "goal": "G",
+  "graph": {
+    "A": ["B", "C"],
+    "B": ["D"],
+    "C": ["D", "E"],
+    "D": ["G"],
+    "E": ["F", "G"],
+    "F": ["G"],
+    "G": []
+  },
+  "hint": "Pour aller de A à G, le signal doit passer par un point central et rester fiable.",
+  "dialogues": [
+    "ARIA : Nous voici dans le secteur des synapses. C'est ici que les neurones transmettent des informations.",
+    "NEO : Pourquoi certaines connexions sont-elles interrompues ?",
+    "ARIA : Le réseau contient des liaisons invalides. Tu dois retrouver le chemin qui respecte les règles de transmission."
+  ]
+}

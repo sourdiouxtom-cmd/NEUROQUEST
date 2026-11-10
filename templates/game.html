@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ level.title }} | NEUROQUEST</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  </head>
+  <body>
+    <div class="container">
+      <header class="topbar">
+        <h1>{{ level.title }}</h1>
+        <nav class="nav">
+          <a href="/">Accueil</a>
+          <a href="/levels">Niveaux</a>
+          <a href="/encyclopedia">Encyclopédie</a>
+        </nav>
+      </header>
+
+      <div class="game-shell">
+        <section class="board" id="board"></section>
+
+        <aside class="panel">
+          <h3>{{ level.subtitle }}</h3>
+          <p class="muted">Objectif : {{ level.objective }}</p>
+          <div class="dialogue" id="aria-dialogue">
+            {{ level.dialogues[0] }}
+          </div>
+          <p class="status" id="selected-path">Aucun neurone sélectionné</p>
+          <p class="status" id="reward">Récompense : 0 étoile(s) • 0 XP</p>
+          <p class="status" id="status">Le chemin est en attente de validation.</p>
+          <div style="display:flex; gap:10px; margin-top:12px;">
+            <button class="button" id="validate-path" type="button">Valider</button>
+            <button class="button" id="reset-path" type="button">Réinitialiser</button>
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    <script>
+      window.levelData = {{ level|tojson }};
+    </script>
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+  </body>
+</html>

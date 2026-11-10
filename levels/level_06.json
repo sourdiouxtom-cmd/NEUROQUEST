@@ -1,0 +1,32 @@
+{
+  "id": 6,
+  "title": "NEURAL DISORDER",
+  "subtitle": "Repérer les anomalies",
+  "objective": "Comparer et corriger le réseau perturbé.",
+  "start": "A",
+  "goal": "P",
+  "graph": {
+    "A": ["B", "C"],
+    "B": ["D"],
+    "C": ["E", "F"],
+    "D": ["G"],
+    "E": ["H"],
+    "F": ["I"],
+    "G": ["J"],
+    "H": ["K"],
+    "I": ["K", "L"],
+    "J": ["M"],
+    "K": ["N"],
+    "L": ["O"],
+    "M": ["P"],
+    "N": ["P"],
+    "O": ["P"],
+    "P": []
+  },
+  "hint": "La perturbation est réelle, mais le réseau possède toujours un chemin de sortie.",
+  "dialogues": [
+    "ARIA : Le modèle est perturbé. Certaines liaisons ne correspondent plus à la réalité.",
+    "NEO : Alors le réseau n'est pas faux, il est simplement déformé.",
+    "ARIA : Exactement. Il faut comparer les zones stables et les anomalies."
+  ]
+}

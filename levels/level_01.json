@@ -1,0 +1,22 @@
+{
+  "id": 1,
+  "title": "FIRST CONNECTION",
+  "subtitle": "Découverte du réseau neuronal",
+  "objective": "Reconnecter le premier chemin neuronique.",
+  "start": "A",
+  "goal": "F",
+  "graph": {
+    "A": ["B", "C"],
+    "B": ["D"],
+    "C": ["D", "E"],
+    "D": ["F"],
+    "E": ["F"],
+    "F": []
+  },
+  "hint": "Le réseau commence par A et s'achève par F.",
+  "dialogues": [
+    "ARIA : Bienvenue dans le premier secteur. Ici, les neurones se relient pour transmettre un signal.",
+    "NEO : Je vois déjà des chemins possibles.",
+    "ARIA : Choisis le bon chemin, sans ignorer la logique du réseau."
+  ]
+}

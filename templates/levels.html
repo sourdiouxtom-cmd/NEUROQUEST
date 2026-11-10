@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Niveaux | NEUROQUEST</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  </head>
+  <body>
+    <div class="container">
+      <header class="topbar">
+        <h1>Les niveaux</h1>
+        <nav class="nav">
+          <a href="/">Accueil</a>
+          <a href="/encyclopedia">Encyclopédie</a>
+          <a href="/settings">Paramètres</a>
+        </nav>
+      </header>
+
+      <div class="level-list">
+        {% for level in levels %}
+          <a class="level-pill" href="/game/{{ level.id }}">{{ level.id }} • {{ level.title }}</a>
+        {% endfor %}
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "id": 4,
+  "title": "SIGNAL OVERLOAD",
+  "subtitle": "Filtrer les signaux parasites",
+  "objective": "Identifier les liaisons erronées et rétablir le signal.",
+  "start": "A",
+  "goal": "L",
+  "graph": {
+    "A": ["B", "C"],
+    "B": ["D"],
+    "C": ["E"],
+    "D": ["F"],
+    "E": ["F", "G"],
+    "F": ["H"],
+    "G": ["H", "I"],
+    "H": ["J"],
+    "I": ["J", "K"],
+    "J": ["L"],
+    "K": ["L"],
+    "L": []
+  },
+  "hint": "Des liens parasites saturent le réseau. Le meilleur chemin est le plus stable.",
+  "dialogues": [
+    "ARIA : Les impulsions sont déroutées. Les mauvais chemins multiplient le bruit.",
+    "NEO : Il faut choisir une route plus claire.",
+    "ARIA : Oui. C'est le signal le plus logique qui parviendra au bout."
+  ]
+}
